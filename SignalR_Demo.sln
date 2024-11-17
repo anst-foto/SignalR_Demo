@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR_Demo.Server", "SignalR_Demo.Server\SignalR_Demo.Server.csproj", "{1B2E7C7B-9FBD-4C42-9E7C-0CC841623075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR_Demo.WPF_Client", "SignalR_Demo.WPF_Client\SignalR_Demo.WPF_Client.csproj", "{5405E899-BBEA-4E3E-9657-453DDCBCC924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR_Demo.Console_Client", "SignalR_Demo.Console_Client\SignalR_Demo.Console_Client.csproj", "{04232E2D-EE3B-4161-BA13-755EDAC11848}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B2E7C7B-9FBD-4C42-9E7C-0CC841623075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2E7C7B-9FBD-4C42-9E7C-0CC841623075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2E7C7B-9FBD-4C42-9E7C-0CC841623075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2E7C7B-9FBD-4C42-9E7C-0CC841623075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5405E899-BBEA-4E3E-9657-453DDCBCC924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5405E899-BBEA-4E3E-9657-453DDCBCC924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5405E899-BBEA-4E3E-9657-453DDCBCC924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5405E899-BBEA-4E3E-9657-453DDCBCC924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04232E2D-EE3B-4161-BA13-755EDAC11848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04232E2D-EE3B-4161-BA13-755EDAC11848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04232E2D-EE3B-4161-BA13-755EDAC11848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04232E2D-EE3B-4161-BA13-755EDAC11848}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
