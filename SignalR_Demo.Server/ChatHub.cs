@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.SignalR;
+using SignalR_Demo.Names;
 
 namespace SignalR_Demo.Server;
 
@@ -6,17 +9,23 @@ public class ChatHub : Hub
 {
     public override async Task OnConnectedAsync()
     {
-        await this.Clients.Others.SendAsync("Notify", $"{this.Context.ConnectionId} connected");
+        await Clients.Others.SendAsync(SignalRNames.Notify, $"{Context.ConnectionId} connected");
         await base.OnConnectedAsync();
     }
 
     public async Task SendAsync(string message)
     {
-        await this.Clients.All.SendAsync("Receive", message);
+        await Clients.All.SendAsync(SignalRNames.Receive, message);
     }
-    
+
     public async Task BroadcastAsync()
     {
-        await this.Clients.All.SendAsync("Broadcast", DateTime.Now.Ticks);
+        await Clients.All.SendAsync(SignalRNames.Broadcast, DateTime.Now.Ticks);
+    }
+
+    public override async Task OnDisconnectedAsync(Exception? exception)
+    {
+        await Clients.Others.SendAsync(SignalRNames.Notify, $"{Context.ConnectionId} disconnected");
+        await base.OnDisconnectedAsync(exception);
     }
 }
